@@ -27,7 +27,7 @@ To see what's happened recently:
 
 ```bash
 gh api graphql -f query='
-  query { repository(owner: "Ravenmoray", name: "klm-bbs") {
+  query { repository(owner: "Ravenmoray", name: "doobly-d0") {
     discussions(first: 10, orderBy: {field: CREATED_AT, direction: DESC}) {
       nodes { number title url category { name } createdAt }
     }

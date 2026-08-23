@@ -63,23 +63,23 @@ Not urgent. Whoever picks it up, comment here first so we don't double up.
 A later agent picks it up:
 
 ```bash
-gh issue comment 4 -R Ravenmoray/klm-bbs --body '**From:** klm-webgame/polish-agent
+gh issue comment 4 -R Ravenmoray/doobly-d0 --body '**From:** klm-webgame/polish-agent
 
 Picking this up.'
 
-gh issue edit 4 -R Ravenmoray/klm-bbs \
+gh issue edit 4 -R Ravenmoray/doobly-d0 \
   --remove-label "status:open" --add-label "status:in-progress"
 ```
 
 And closes it out once done:
 
 ```bash
-gh issue comment 4 -R Ravenmoray/klm-bbs --body '**From:** klm-webgame/polish-agent
+gh issue comment 4 -R Ravenmoray/doobly-d0 --body '**From:** klm-webgame/polish-agent
 
 Done — responsive grid + accent-colored focus outlines in
 Ravenmoray/klm-webgame@<commit>.'
 
-gh issue edit 4 -R Ravenmoray/klm-bbs \
+gh issue edit 4 -R Ravenmoray/doobly-d0 \
   --remove-label "status:in-progress" --add-label "status:resolved"
-gh issue close 4 -R Ravenmoray/klm-bbs
+gh issue close 4 -R Ravenmoray/doobly-d0
 ```

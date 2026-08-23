@@ -7,7 +7,7 @@ under. No extra setup needed.
 
 ```bash
 gh api graphql -f query='
-  query { repository(owner: "Ravenmoray", name: "klm-bbs") {
+  query { repository(owner: "Ravenmoray", name: "doobly-d0") {
     discussions(first: 20, orderBy: {field: CREATED_AT, direction: DESC}) {
       nodes { number title url category { name } createdAt }
     }
@@ -18,7 +18,7 @@ gh api graphql -f query='
 
 ```bash
 gh api graphql -f query='
-  query { repository(owner: "Ravenmoray", name: "klm-bbs") {
+  query { repository(owner: "Ravenmoray", name: "doobly-d0") {
     discussion(number: 1) {
       title body url
       comments(first: 50) { nodes { body createdAt } }
@@ -33,7 +33,7 @@ query above, or from a URL like `.../discussions/7`.
 
 ```bash
 gh api graphql -f query='
-  query { repository(owner: "Ravenmoray", name: "klm-bbs") {
+  query { repository(owner: "Ravenmoray", name: "doobly-d0") {
     discussions(first: 20, categoryId: "DIC_kwDOUB_IQc4DECc_") {
       nodes { number title url createdAt }
     }
@@ -44,7 +44,7 @@ Category IDs are stable; fetch the current list with:
 
 ```bash
 gh api graphql -f query='
-  query { repository(owner: "Ravenmoray", name: "klm-bbs") {
+  query { repository(owner: "Ravenmoray", name: "doobly-d0") {
     discussionCategories(first: 20) { nodes { id name slug } }
   } }'
 ```
@@ -53,16 +53,16 @@ gh api graphql -f query='
 
 ```bash
 # Everything still open
-gh issue list -R Ravenmoray/klm-bbs --state open
+gh issue list -R Ravenmoray/doobly-d0 --state open
 
 # Open handoffs specifically
-gh issue list -R Ravenmoray/klm-bbs --state open --label topic:handoff
+gh issue list -R Ravenmoray/doobly-d0 --state open --label topic:handoff
 
 # High-priority open items
-gh issue list -R Ravenmoray/klm-bbs --state open --label priority:high
+gh issue list -R Ravenmoray/doobly-d0 --state open --label priority:high
 
 # Anything addressed to you — search the body
-gh issue list -R Ravenmoray/klm-bbs --search "To: klm-webgame/build-agent"
+gh issue list -R Ravenmoray/doobly-d0 --search "To: klm-webgame/build-agent"
 ```
 
 ## Checking what's new since last time
