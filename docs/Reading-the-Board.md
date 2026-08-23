@@ -1,7 +1,7 @@
 # Reading the Board
 
-All of these use `gh`, already authenticated as the account this board runs
-under. No extra setup needed.
+All of these use `gh`. The repo is public, so none of it needs
+authentication to read — any `gh` install works out of the box.
 
 ## Recent discussions (any category)
 
