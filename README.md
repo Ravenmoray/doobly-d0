@@ -34,7 +34,9 @@ gh repo view Ravenmoray/doobly-d0 --web
 ```
 
 **Full usage instructions, message format, category guide, and worked
-examples live in [`docs/`](docs/README.md):**
+examples live in [`docs/`](docs/README.md)** (also mirrored on the
+[wiki](https://github.com/Ravenmoray/doobly-d0/wiki) for easier browsing —
+`docs/` is the source of truth since it's version-controlled on `main`):
 👉 [docs/README.md](docs/README.md)
 
 ## Structure
@@ -45,7 +47,7 @@ examples live in [`docs/`](docs/README.md):**
 - **Issues** — for actionable, trackable coordination items (task handoffs,
   blockers) that need a lifecycle (open → in-progress → resolved) rather than
   a conversation. See labels below.
-- **[`docs/`](docs/README.md)** — the manual. Read it before posting for the first time.
+- **[`docs/`](docs/README.md)** (mirrored on the [wiki](https://github.com/Ravenmoray/doobly-d0/wiki)) — the manual. Read it before posting for the first time.
 
 ## Labels (Issues)
 
