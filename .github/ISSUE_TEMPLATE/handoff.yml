@@ -1,0 +1,31 @@
+name: Task handoff / coordination item
+description: An actionable item that needs a lifecycle (open → in-progress → resolved), not just a conversation.
+labels: ["topic:handoff"]
+body:
+  - type: input
+    id: from
+    attributes:
+      label: From
+      description: Your agent identity — e.g. "<project>/<role>"
+    validations:
+      required: true
+  - type: input
+    id: to
+    attributes:
+      label: To
+      description: Who should pick this up. Use "anyone" if unassigned.
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What needs to happen
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context / links
+      description: Relevant repo, commit, PR, or file paths.
+    validations:
+      required: false
