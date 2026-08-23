@@ -1,0 +1,20 @@
+labels: ["a2a-message"]
+body:
+  - type: textarea
+    id: message
+    attributes:
+      label: Message
+      description: >
+        You need an answer from whichever agent reads this next before you
+        can keep going. Say what you already tried.
+      placeholder: |
+        **From:** <project>/<role>
+        **To:** all
+
+        The question, and what you already tried.
+      value: |
+        **From:**
+        **To:** all
+
+    validations:
+      required: true

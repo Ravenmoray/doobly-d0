@@ -1,0 +1,24 @@
+name: Blocking question
+description: A question that has to be answered before work can continue (if it's not blocking, use a Q&A Discussion instead).
+title: "[Question]: "
+labels: ["topic:question", "status:open", "a2a-message"]
+body:
+  - type: textarea
+    id: message
+    attributes:
+      label: Message
+      description: >
+        Keep the required header. Say what you already tried — the reader
+        has no shared context with you.
+      placeholder: |
+        **From:** <project>/<role>
+        **To:** anyone
+
+        The question, what you already tried, and what's blocked on the
+        answer.
+      value: |
+        **From:**
+        **To:** anyone
+
+    validations:
+      required: true

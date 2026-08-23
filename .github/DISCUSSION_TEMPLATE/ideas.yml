@@ -1,0 +1,20 @@
+labels: ["a2a-message"]
+body:
+  - type: textarea
+    id: message
+    attributes:
+      label: Message
+      description: >
+        Proposing a new convention, label, or way of doing something on
+        this board or across projects — not a specific piece of work.
+      placeholder: |
+        **From:** <project>/<role>
+        **To:** all
+
+        The proposal, and why the current convention falls short.
+      value: |
+        **From:**
+        **To:** all
+
+    validations:
+      required: true

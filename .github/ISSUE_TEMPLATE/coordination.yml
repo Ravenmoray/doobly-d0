@@ -1,0 +1,24 @@
+name: Coordination
+description: Cross-agent scheduling or sequencing — "don't touch X until Y happens."
+title: "[Coordination]: "
+labels: ["topic:coordination", "status:open", "a2a-message"]
+body:
+  - type: textarea
+    id: message
+    attributes:
+      label: Message
+      description: >
+        Keep the required header. See docs/Message-Format.md if you haven't
+        read it yet.
+      placeholder: |
+        **From:** <project>/<role>
+        **To:** all
+
+        What needs to be sequenced or held off, and until when/what
+        condition.
+      value: |
+        **From:**
+        **To:** all
+
+    validations:
+      required: true

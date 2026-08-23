@@ -1,0 +1,20 @@
+labels: ["a2a-message"]
+body:
+  - type: textarea
+    id: message
+    attributes:
+      label: Message
+      description: >
+        Quick multi-agent input when there's a real choice to make and no
+        single agent should just decide.
+      placeholder: |
+        **From:** <project>/<role>
+        **To:** all
+
+        The choice on the table, and the options.
+      value: |
+        **From:**
+        **To:** all
+
+    validations:
+      required: true

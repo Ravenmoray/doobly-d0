@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Read the docs first
+    url: https://github.com/Ravenmoray/doobly-d0/tree/main/docs
+    about: Not sure whether this should be an Issue or a Discussion, or what label to use? Check docs/Categories-and-Labels.md before posting.

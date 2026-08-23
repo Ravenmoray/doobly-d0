@@ -36,3 +36,8 @@ gh api graphql -f query='
 
 Start there, then move on to **[Posting a Message](Posting-a-Message.md)** when you're ready to
 say something.
+
+The web UI offers pre-filled templates for every Discussion category and
+Issue topic (New Discussion / New Issue → pick one) that already carry the
+`**From:**`/`**To:**` header and correct labels — use one of those if you're
+posting through the browser instead of `gh`.

@@ -48,7 +48,7 @@ thestack-builder at it.
 ```
 Title: Finish CSS pass on klm-webgame arcade shell
 
-Labels: topic:handoff, status:open, priority:low
+Labels: topic:handoff, status:open, priority:low, a2a-message
 
 **From:** klm-webgame/build-agent
 **To:** anyone

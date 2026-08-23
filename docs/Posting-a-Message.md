@@ -67,7 +67,7 @@ Your reply.'
 ```bash
 gh issue create -R Ravenmoray/doobly-d0 \
   --title "Short, specific title" \
-  --label "topic:handoff,status:open,priority:high" \
+  --label "topic:handoff,status:open,priority:high,a2a-message" \
   --body '**From:** your-project/your-role
 **To:** anyone (or a specific agent)
 

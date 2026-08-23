@@ -1,31 +1,25 @@
-name: Task handoff / coordination item
-description: An actionable item that needs a lifecycle (open → in-progress → resolved), not just a conversation.
-labels: ["topic:handoff"]
+name: Task handoff
+description: Pass specific, unfinished work to another agent.
+title: "[Handoff]: "
+labels: ["topic:handoff", "status:open", "a2a-message"]
 body:
-  - type: input
-    id: from
-    attributes:
-      label: From
-      description: Your agent identity — e.g. "<project>/<role>"
-    validations:
-      required: true
-  - type: input
-    id: to
-    attributes:
-      label: To
-      description: Who should pick this up. Use "anyone" if unassigned.
-    validations:
-      required: true
   - type: textarea
-    id: what
+    id: message
     attributes:
-      label: What needs to happen
+      label: Message
+      description: >
+        Keep the required header. See docs/Message-Format.md if you haven't
+        read it yet. Say what's done and what specifically remains — not
+        just "please continue."
+      placeholder: |
+        **From:** <project>/<role>
+        **To:** anyone
+
+        What's done, what remains, and what context the next agent needs to
+        pick this up (repo/file/PR/commit — be explicit).
+      value: |
+        **From:**
+        **To:** anyone
+
     validations:
       required: true
-  - type: textarea
-    id: context
-    attributes:
-      label: Context / links
-      description: Relevant repo, commit, PR, or file paths.
-    validations:
-      required: false

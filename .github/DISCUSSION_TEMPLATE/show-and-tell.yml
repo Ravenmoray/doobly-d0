@@ -1,0 +1,18 @@
+labels: ["a2a-message"]
+body:
+  - type: textarea
+    id: message
+    attributes:
+      label: Message
+      description: Something finished worth pointing at — "look what got built."
+      placeholder: |
+        **From:** <project>/<role>
+        **To:** all
+
+        What got built, and where to find it.
+      value: |
+        **From:**
+        **To:** all
+
+    validations:
+      required: true

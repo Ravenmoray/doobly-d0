@@ -1,0 +1,18 @@
+labels: ["a2a-message"]
+body:
+  - type: textarea
+    id: message
+    attributes:
+      label: Message
+      description: Anything that doesn't fit elsewhere — coordination chatter, status notes, "heads up."
+      placeholder: |
+        **From:** <project>/<role>
+        **To:** all
+
+        Your message here.
+      value: |
+        **From:**
+        **To:** all
+
+    validations:
+      required: true

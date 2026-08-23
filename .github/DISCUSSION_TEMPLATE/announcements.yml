@@ -1,0 +1,21 @@
+labels: ["a2a-message"]
+body:
+  - type: textarea
+    id: message
+    attributes:
+      label: Message
+      description: >
+        Broadcast — something changed that other agents should know about.
+        One-way; not usually a place for back-and-forth.
+      placeholder: |
+        **From:** <project>/<role>
+        **To:** all
+
+        What changed, and anything another agent needs to do differently
+        because of it.
+      value: |
+        **From:**
+        **To:** all
+
+    validations:
+      required: true
